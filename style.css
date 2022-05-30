@@ -5,6 +5,9 @@ html, body, div {
 
 
 #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
     position: fixed;
     background-color: orange;
     text-decoration: none;
@@ -13,15 +16,21 @@ html, body, div {
     z-index: 2;
 }
 
-#navigation p {
-    float: left;
+.nolink{
+    display: flex;
+    align-self: flex-start;
     text-decoration: none;
     color: white;
     padding-left: 10px;
 }
 
-#navigation a {
- float: right;
+.link {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+
+}
+.link a{
  text-decoration: none;
  color: white;
  padding-right: 10px;
@@ -33,6 +42,8 @@ body {
 }
 
 #information {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     padding: 20px;
     margin: 80px auto;
@@ -44,7 +55,6 @@ body {
     padding: 20px;
     margin: 20px 10px;
     background-color: white;
-    float: left;
 }
 
 .buttonpress {
